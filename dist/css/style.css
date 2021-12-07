@@ -1,0 +1,117 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.phone,
+.title {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.button {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  font-size: inherit;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 27px;
+  color: #2C2B2B;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.phone {
+  line-height: 53px;
+}
+
+.button {
+  line-height: 20px;
+  padding: 14px 55px 15px;
+  background-color: #5A0D67;
+  border: 1px solid #5A0D67;
+  color: #FFF;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.button:hover {
+  background-color: #FFF;
+  color: #5A0D67;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__item + .social__item {
+  padding-left: 10px;
+}
+
+.title {
+  position: relative;
+  color: #21062A;
+  text-transform: uppercase;
+  line-height: 53px;
+  margin-bottom: 50px;
+}
+
+.title::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 80px;
+  background-color: #21062A;
+  top: 20px;
+  margin-left: 20px;
+}
+@supports (-webkit-appearance:none){
+
+}
