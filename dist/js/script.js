@@ -54,7 +54,7 @@
 // console.log(decr--);
 
 
- /* условия */
+/* условия */
 
 //  if(4 == 4){
 //     console.log('Ok!');
@@ -80,19 +80,41 @@
 
 /* условия switch*/
 
-const num = 51;
+// const num = 51;
 
-switch (num){
-   case 49:
-      console.log('Неверно.');
-      break;
-   case 100:
-      console.log('Неверно.');
-      break;
-   case 50:
-      console.log('В точку!');
-      break;
-   default:
-      console.log('Не в этот раз.');
-      break;
-}
+// switch (num){
+//    case 49:
+//       console.log('Неверно.');
+//       break;
+//    case 100:
+//       console.log('Неверно.');
+//       break;
+//    case 50:
+//       console.log('В точку!');
+//       break;
+//    default:
+//       console.log('Не в этот раз.');
+//       break;
+// }
+
+/* Create application */
+
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+const personalMovieDB = {
+   count: numberOfFilms,
+   movies: {},
+   actors: {},
+   genres: [],
+   private: false
+};
+
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+   b = +prompt('На сколько оцените его?', ''),
+   c = prompt('Один из последних просмотренных фильмов?', ''),
+   d = +prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
